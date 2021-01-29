@@ -1,0 +1,106 @@
+ // dir
+  "Print to console": {
+    "prefix": "dir",
+    "body": ["console.dir($0);"],
+    "description": "Dir output to console"
+  },
+
+  // Request & Response nodeJS
+  "Request & Response": {
+    "prefix": "rr",
+    "body": ["(req,res)=>{$0}"],
+    "description": "Request & Response nodeJS"
+  },
+
+  // Request & Response & Next nodeJS
+  "Request & Response & Next": {
+    "prefix": "rrn",
+    "body": ["(req,res,next)=>{$0}"],
+    "description": "Request & Response & Next nodeJS"
+  },
+
+  // Require
+  "Reqire": {
+    "prefix": "req",
+    "body": ["require($0);"],
+    "description": "Require"
+  },
+
+  // Render Response
+  "Render Response": {
+    "prefix": "ren",
+    "body": ["res.render('$0');"],
+    "description": "Render Response"
+  },
+
+  // JSON Response
+  "JSON Response": {
+    "prefix": "rej",
+    "body": ["res.json({$0});"],
+    "description": "JSON Response"
+  },
+
+  // Module Exports
+  "Module Exports": {
+    "prefix": "mx",
+    "body": ["module.exports={$0};"],
+    "description": "Module Exports"
+  },
+
+  // Promise Resolve Reject
+  "Promise Resolve Reject": {
+    "prefix": "prr",
+    "body": ["new Promise((resolve,reject)=>{$0})"],
+    "description": "Promise Resolve Reject"
+  },
+
+  // Request Data
+  "Request Data": {
+    "prefix": "rdata",
+    "body": ["req.on('data', (chunk) => {$0});"],
+    "description": "Request Data"
+  },
+
+  // Request End
+  "Request End": {
+    "prefix": "rend",
+    "body": ["req.on('end', () => {$0});"],
+    "description": "Request End"
+  },
+
+  // Try & Catch
+  "Try & Catch": {
+    "prefix": "tc",
+    "body": ["try {$0} catch (err) {console.log(err);}"],
+    "description": "Try & Catch"
+  }
+
+html
+// Copyright
+  "Copyright": {
+    "prefix": "copy",
+    "body": ["Copyright &copy; 2021, Developed by Himel"],
+    "description": "Print Copyright"
+  },
+
+  // Bootstrap
+  "Container": {
+    "prefix": "con",
+    "body": ["<div class=\"container\">${0}</div>"],
+    "description": "Container"
+  },
+  "Row": {
+    "prefix": "row",
+    "body": ["<div class=\"row\">${0}</div>"],
+    "description": "Row"
+  },
+  "ColS": {
+    "prefix": "cols",
+    "body": ["<div class=\"col-sm\">${0}</div>"],
+    "description": "ColS"
+  },
+  "OffS": {
+    "prefix": "offs",
+    "body": ["<div class=\"col-sm-${1} offset-sm-${2}\">${0}</div>"],
+    "description": "OffS"
+  }
